@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+:root{
+    --pink-lace: #f5cce8;
+    --plum-web: #ec9ded;
+    --middle-purple: #c880b7;
+    --pearly-purple: #9f6ba0;
+    --dark-purple: #4a2040;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+    padding: 2rem;
+}
+.quote{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 4rem 1.5rem;
+    -webkit-box-shadow: 0px 2px 15px -5px rgba(0,0,0,0,1);
+    -moz-box-shadow: 0px 2px 15px -5px rgba(0,0,0,1);
+    box-shadow: 0px 2px 15px -5px rgba(0,0,0,1);
+}
+.quote h2{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.quote small{
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+    color: var(--dark-purple);
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.quote blockquote{
+    padding: 1.4rem 0;
+    font-weight: 300;
+}
+.quote cite{
+    display: block;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+#gen-quote-btn{
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(53, 103, 147);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    outline: 0;
+}
+#gen-quote-btn:hover{
+    -webkit-box-shadow: 0px 2px 15px -5px rgba(16, 54, 78, 0.759);
+    -moz-box-shadow: 0px 2px 15px -5px rgba(16, 54, 78, 0.759);
+    box-shadow: 0px 2px 15px -5px rgba(16, 54, 78, 0.759);
+}
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+}
+@media screen and (min-width: 680px){
+    .quote{
+        width: 600px;
+    }
+}
